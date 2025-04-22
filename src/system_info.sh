@@ -1,11 +1,17 @@
-!#/bin/bash/
-# greet the user 
+#!/bin/bash
+
+# Greet the user
 echo "Hello, $USER!"
 
-#Show today's date 
+# Show the current date and time
 echo "Today's date is: $(date)"
 
-#Show system uptime 
-echo "System uptime is :"
-uptime 
+# Show system uptime
+echo "Your system uptime is:"
+uptime
+
+# Show disk usage
+echo "Here is your disk usage:"
+df -h
+ 
 
