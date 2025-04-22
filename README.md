@@ -10,7 +10,7 @@ The script (`system_info.sh`) displays:
 ## How to Run
 
 Make the script executable:
+chmod +x src/system_info.sh
+./src/system_info.sh
 
-```bash
-chmod +x system_info.sh
 
