@@ -18,3 +18,10 @@ echo "Here is your disk usage:"
 df -h
 
 
+if [ "$my_user" = "root" ]; then 
+	echo "you are runnig this as ROOT user!"
+else  
+	echo "you are runing as a normal user."
+fi 
+
+
