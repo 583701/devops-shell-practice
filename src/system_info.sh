@@ -17,11 +17,18 @@ uptime
 echo "Here is your disk usage:"
 df -h
 
-
+#check if user root 
 if [ "$my_user" = "root" ]; then 
 	echo "you are runnig this as ROOT user!"
 else  
 	echo "you are runing as a normal user."
 fi 
 
-
+#print 5 star
+echo ""
+echo "Performace rating:"
+for i in {1..5}
+do
+	echo  -n "*"
+done 
+echo ""
