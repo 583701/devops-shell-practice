@@ -1,9 +1,12 @@
 #!/bin/bash
 
-# Greet the user
-echo "Hello, $USER!"
+#Store username in a variable 
+my_user=$USER
 
-# Show the current date and time
+#Greet the user using variable 
+eacho "Hello, $my_user!"
+
+# Show current date
 echo "Today's date is: $(date)"
 
 # Show system uptime
@@ -13,5 +16,5 @@ uptime
 # Show disk usage
 echo "Here is your disk usage:"
 df -h
- 
+
 
