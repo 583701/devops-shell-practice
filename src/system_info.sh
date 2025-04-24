@@ -1,10 +1,13 @@
 #!/bin/bash
-
+show_info()
+{
+	
+    echo ">>> [Starting system info check $USER] <<<"
 #Store username in a variable 
 my_user=$USER
 
 #Greet the user using variable 
-eacho "Hello, $my_user!"
+echo "Hello, $my_user!"
 
 # Show current date
 echo "Today's date is: $(date)"
@@ -32,3 +35,16 @@ do
 	echo  -n "*"
 done 
 echo ""
+}
+echo ""
+echo "Calling the function again for fun!"
+
+#call the function for first time 
+
+show_info
+
+#Call the function a second time
+echo ""
+echo ">>> [ Re-running the check again... ] <<<"
+show_info
+
