@@ -1,4 +1,4 @@
-name: Run Shell Script
+name: Run Script and Send Email
 
 on:
   push:
@@ -8,12 +8,33 @@ on:
 jobs:
   run-script:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout Repository
+      - name: Checkout repository
         uses: actions/checkout@v3
 
       - name: Run Shell Script
         run: |
           chmod +x src/system_info.sh
-          ./src/system_info.sh
+          ./src/system_info.sh > output.txt
+
+      - name: Send Email
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 587
+          username: ${{ secrets.MAIL_USERNAME }}
+          password: ${{ secrets.MAIL_PASSWORD }}
+          subject: "GitHub Actions: System Info Script Report"
+          to: ${{ secrets.MAIL_TO }}
+          from: ${{ secrets.MAIL_FROM }}
+          body: |
+            Hello 👋,
+
+            This is your system info report from GitHub Actions.
+
+            Please find the output of your shell script attached.
+
+            - GitHub Actions Bot 🤖
+          attachments: output.txt
 
