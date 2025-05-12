@@ -1,5 +1,6 @@
 # DevOps Shell Practice Project
 
+
 This is a basic shell script project created for DevOps practice.
 
 The script (`system_info.sh`) displays:
@@ -15,6 +16,5 @@ chmod +x src/system_info.sh
 
 ##Updates
 - Added performance stars 🌟
-wweeiijjjjie
-Test Jenkins trigger
+Test Jenkins trigger 123344
 Test Jenkins trigger
