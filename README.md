@@ -15,4 +15,4 @@ chmod +x src/system_info.sh
 ./src/system_info.sh
 
 ##Updates
-- Added performance stars 🌟
+- Added performance stars 🌟ll
