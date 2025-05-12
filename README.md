@@ -13,6 +13,6 @@ Make the script executable:
 chmod +x src/system_info.sh
 ./src/system_info.sh
 
-## Updates
+##Updates
 - Added performance stars 🌟
-
+wweeiijjjjie
