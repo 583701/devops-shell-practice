@@ -16,4 +16,4 @@ chmod +x src/system_info.sh
 
 ##Updates
 - Added performance stars 🌟
-
+888
