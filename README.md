@@ -16,5 +16,4 @@ chmod +x src/system_info.sh
 
 ##Updates
 - Added performance stars 🌟
-Test Jenkins trigger 123344766
-Test Jenkins trigger
+
